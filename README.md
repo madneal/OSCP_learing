@@ -1,4 +1,8 @@
-# OSCP_learing
+# OSCP learning
+
+## 官方
+
+* [官方考试说明](https://www.lshack.cn/wp-content/uploads/2019/02/lshack.cn_2019-02-12_09-29-54.pdf)
 
 ## 考试报名
 
