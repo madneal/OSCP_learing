@@ -5,6 +5,7 @@
 * [官方考试说明](https://www.lshack.cn/wp-content/uploads/2019/02/lshack.cn_2019-02-12_09-29-54.pdf)
 * [PWK FAQ](https://support.offensive-security.com/#!pwk-general-questions.md)
 * [OSCP exam FAQ](https://support.offensive-security.com/oscp-faq/)
+* [IRC](https://www.offensive-security.com/offsec-irc-guide/)
 
 ## 考试报名
 
