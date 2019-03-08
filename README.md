@@ -60,6 +60,19 @@ p.waitFor()
 `xterm -display 10.0.0.1:1`
 
 
+### nmap 
+
+#### 端口探测
+
+```
+nmap -sT -p- --min-rate 10000 -oA scans/nmap-alltcp 10.10.10.5
+```
+
+```
+nmap -sV -sC -p 21,80 -oA scans/nmap-scripts 10.10.10.5
+```
+
+
 
 
 ### Kali Linux
