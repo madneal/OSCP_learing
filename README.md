@@ -12,6 +12,7 @@
 ## 资料链接
 
 * [windows exploit](https://github.com/abatchy17/WindowsExploits)
+* [OSCP like vulnhub](https://medium.com/@andr3w_hilton/oscp-training-vms-hosted-on-vulnhub-com-22fa061bf6a1)
 
 ## cheetsheet 
 
