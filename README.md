@@ -14,6 +14,7 @@
 * [windows exploit](https://github.com/abatchy17/WindowsExploits)
 * [OSCP like vulnhub](https://medium.com/@andr3w_hilton/oscp-training-vms-hosted-on-vulnhub-com-22fa061bf6a1)
 * [OSCP official report](https://www.offensive-security.com/pwk-online/PWK-Example-Report-v1.pdf)
+* [smb 枚举](https://xax007.github.io/2019-01-12-smb-enumeration-checklist/)
 
 ## cheetsheet 
 
