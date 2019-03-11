@@ -16,6 +16,7 @@
 * [OSCP official report](https://www.offensive-security.com/pwk-online/PWK-Example-Report-v1.pdf)
 * [smb 枚举](https://xax007.github.io/2019-01-12-smb-enumeration-checklist/)
 * [reverse shell](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
+* [PHP reverse shell script](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 
 ## cheetsheet 
 
