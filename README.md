@@ -20,6 +20,12 @@
 
 ## cheetsheet 
 
+### linux 提权
+
+### windows 提权
+
+
+
 ### File transfer
 
 #### python
@@ -173,33 +179,12 @@ nmap -sT -p- --min-rate 10000 -oA scans/nmap-alltcp 10.10.10.5
 nmap -sV -sC -p 21,80 -oA scans/nmap-scripts 10.10.10.5
 ```
 
+### 常用命令
 
+#### 编译 windows 执行程序
 
+```
+i686-w64-mingw32-gcc -o scsiaccess.exe useradd.c
+```
 
-### Kali Linux
-
-* 设置目标机器 IP 地址为系统变量
-`export ip=192.168.1.0`
-* 定位文件
-`locate sbd.exe`
-* 在 `$PATH` 环境变量里查找目录 `which sbd`
-* 展示活动互联网链接 `netstat -lntp`
-* 修改密码 `paswd`
-* 验证服务是否正在运行并监听 `netstat -antp |grep apache`
-* 启动服务 `systemctl start ssh`
-* 让服务在启动的时候开启 `systemctl enable ssh`
-* 停止服务 `systemctl stop ssh`
-* 解压 gz 文件 `gunzip access.log.gz`
-* 解压 tar.gz 文件 `tar -xzvf file.tar.gz`
-* 检索命令历史 `history |grep phrase_to_search_for`
-* 下载网页 `wget https://www.baidu.com`
-* 打开网页 `curl https://wwww.baidu.com`
-* 字符串操作
-  * 统计文件中行数
-  `wc -l index.html`
-  * 获取文件的开头或者结尾
-  `head index.html`
-  `tail index.html`
-  * 提取包含某个字符串的所有行
-  `grep "href=" index.html`
   
