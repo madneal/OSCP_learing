@@ -23,6 +23,10 @@
 
 ### linux 提权
 
+#### 检查 SUID 
+
+`find / -type f -perm -u=s 2>/dev/null`
+
 ### windows 提权
 
 
