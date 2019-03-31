@@ -56,6 +56,10 @@ cat passwd | base64 -w 0
 echo generated_base64 | base64 -d >> /etc/passwd
 ```
 
+### 检查用户当前运行进程
+
+https://github.com/DominicBreuker/pspy
+
 
 ### windows 提权
  * [windows 内核利用](https://github.com/51x/WHP)
