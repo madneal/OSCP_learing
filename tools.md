@@ -1,0 +1,3 @@
+## Information gathering 
+
+* exiftool
