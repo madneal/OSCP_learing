@@ -7,3 +7,4 @@
 ## Password crack
 
 * PSCredential: `powershell -c "$cred = Import-CliXml -Path cred.xml; $cred.GetNetworkCredential() | Format-List *"`
+* [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool): retreive private key from weak public key and/or uncipher data
