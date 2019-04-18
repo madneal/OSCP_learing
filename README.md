@@ -63,6 +63,7 @@ https://github.com/DominicBreuker/pspy
 
 ### windows 提权
  * [windows 内核利用](https://github.com/51x/WHP)
+ * [windows 提权常见步骤](https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/)
 
 
 ### File transfer
