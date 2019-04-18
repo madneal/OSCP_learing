@@ -1,3 +1,11 @@
+# Windows
+
+## List services
+
+`wmic service where started=true get name, startname`
+
+# Linux
+
 ## Get remote script and execute
 
 `bash <(curl -s http://mywebsite.com/myscript.txt)`
