@@ -1,5 +1,5 @@
 ## Information gathering 
-
+* [skipfish](https://tools.kali.org/web-applications/skipfish)
 * exiftool
 * wfuzz
 * [smtp-user-enum](http://pentestmonkey.net/tools/user-enumeration/smtp-user-enum)
