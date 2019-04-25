@@ -21,3 +21,7 @@
 ## Useful files
 
 * 1 pixel image: https://s2.ax1x.com/2019/04/16/AvYlsH.jpg
+
+## Reverse tools
+
+[x64dbg](https://x64dbg.com/#start)
