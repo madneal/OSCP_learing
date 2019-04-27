@@ -15,6 +15,10 @@
 
 * [httpie](https://github.com/jakubroztocil/httpie)
 
+## Vulnerable attack tool
+
+* [tplmap](https://github.com/epinna/tplmap)
+
 ## Database
 * [ODAT](https://github.com/quentinhardy/odat): Oracle Database Attacking Tool
 
