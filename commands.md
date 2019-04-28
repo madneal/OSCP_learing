@@ -14,6 +14,9 @@
 
 `bash <(curl -s http://mywebsite.com/myscript.txt)`
 
+## Find exclude specific words
+
+`find / -type f -name "filename" 2>&1 | grep -v "Permission denied`
 ## ssh
 
 ### 使用 private key 登录
