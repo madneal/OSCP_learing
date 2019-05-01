@@ -18,6 +18,7 @@
 * [reverse shell](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 * [PHP reverse shell script](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 * [linux priv check](https://raw.githubusercontent.com/neal1991/htb/62d6df2d86669a2957418e74c3a79a535297f386/SolidState/linuxprivchecker.py)
+* [upgrade reverse shell](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
 
 ## cheetsheet 
 
