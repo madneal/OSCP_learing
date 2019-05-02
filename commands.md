@@ -22,6 +22,7 @@
 ## Find exclude specific words
 
 `find / -type f -name "filename" 2>&1 | grep -v "Permission denied`
+
 ## ssh
 
 ### 使用 private key 登录
@@ -29,3 +30,9 @@
 ![AxtqoR.png](https://s2.ax1x.com/2019/04/16/AxtqoR.png)
 
 修改 private key 权限，`chmod 4000`
+
+## network
+
+### Test icmp
+
+`tcpdump -i tun0 icmp`
