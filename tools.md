@@ -29,3 +29,7 @@
 ## Reverse tools
 
 [x64dbg](https://x64dbg.com/#start)
+
+## Linux tools
+
+* [debugfs](https://linux.die.net/man/8/debugfs): File system debugger
