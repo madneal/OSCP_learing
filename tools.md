@@ -33,3 +33,9 @@
 ## Linux tools
 
 * [debugfs](https://linux.die.net/man/8/debugfs): File system debugger
+
+# Other tools
+
+## Screen recording
+
+[OBS](https://obsproject.com/)
