@@ -1,5 +1,10 @@
 # Windows
 
+## Hidden streams
+
+* List files with streams: `dir \R`
+* Read a stream from command line: `more < FileName:StreamName`
+
 ## List services
 
 `wmic service where started=true get name, startname`
