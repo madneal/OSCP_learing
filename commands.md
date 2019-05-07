@@ -15,6 +15,10 @@
 
 # Linux
 
+## DNS zone transfer
+
+`dig axfr @10.10.10.52 matis.htb`
+
 ## FTP download files 
 
 `wget -r --no-passive ftp://10.10.10.106`
