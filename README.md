@@ -24,7 +24,7 @@
 
 ### 信息枚举
 
-* [droopescan]
+* droopescan
 
 #### 生成字典
 
