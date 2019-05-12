@@ -1,5 +1,9 @@
 # Windows
 
+## Smb shares enumerate
+
+`smbclient -L 10.10.10.134 -U " "%" " `
+
 ## Hidden streams
 
 * List files with streams: `dir \R`
