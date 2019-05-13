@@ -40,6 +40,10 @@
 
 `find / -type f -name "filename" 2>&1 | grep -v "Permission denied`
 
+## Check capacity
+
+`getcap -r / 2>/dev/null`
+
 ## ssh
 
 ### 使用 private key 登录
