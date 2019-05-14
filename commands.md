@@ -52,6 +52,14 @@
 
 修改 private key 权限，`chmod 4000`
 
+## Tools
+
+### Nmap 
+
+#### ldap
+
+`nmap -p 389 --script ldap-search 10.10.10.119`
+
 ## network
 
 ### Test icmp
