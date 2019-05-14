@@ -54,6 +54,15 @@
 
 ## Tools
 
+### John
+
+#### 7z
+
+```
+/opt/john/run/7z2john.pl backup.7z > backup.hash
+hashcat -m 11600 -a 0 -o backup.cracked backup.hash /usr/share/wordlists/rockyou.txt --force
+```
+
 ### Nmap 
 
 #### ldap
