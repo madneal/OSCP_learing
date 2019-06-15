@@ -68,6 +68,12 @@ cat /proc/1/cgroup
 
 ## Tools
 
+### snmpwalk
+
+```
+snmpwalk -v 2c -c public 10.10.10.65
+```
+
 ### Cewl
 
 #### Generate password list
