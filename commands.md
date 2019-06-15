@@ -70,9 +70,16 @@ cat /proc/1/cgroup
 
 ### snmpwalk
 
+#### information scan
+
 ```
 snmpwalk -v 2c -c public 10.10.10.65
 ```
+
+#### enable MIB
+
+* apt install snmp-mibs-downloader
+* comment out mibs in `/etc/snmp/snmap.conf`
 
 ### Cewl
 
