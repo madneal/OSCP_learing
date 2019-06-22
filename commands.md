@@ -68,6 +68,14 @@ cat /proc/1/cgroup
 
 ## Tools
 
+### openssl
+
+#### obtain HTTPS certificate information
+
+```
+echo | openssl s_client -showcerts -servername 10.10.10.124 -connect 10.10.10.124:443 2>/dev/null | openssl x509 -inform pem -noout -text
+```
+
 ### snmpwalk
 
 #### information scan
