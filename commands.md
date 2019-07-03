@@ -4,6 +4,8 @@
 
 `smbclient -L 10.10.10.134 -U " "%" " `
 
+`smbclient -N -L //10.10.10.125`
+
 ## Hidden streams
 
 * List files with streams: `dir \R`
