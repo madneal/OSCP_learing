@@ -68,7 +68,30 @@ cat /proc/1/cgroup
 
 修改 private key 权限，`chmod 4000`
 
-## Tools
+# Tools
+
+## Impacket
+
+### mssql
+
+#### mssql clinet connect
+
+```
+mssqlclient.py reporting:'PcwTWTHRwryjc$c6'@10.10.10.125 -windows-auth
+```
+
+#### check user's permissions
+
+```
+SELECT * FROM fn_my_permissions(NULL, 'SERVER');
+```
+
+#### check databases
+
+```
+SELECT name FROM master.sys.databases
+```
+
 
 ### openssl
 
