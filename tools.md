@@ -33,6 +33,10 @@
 
 [x64dbg](https://x64dbg.com/#start)
 
+## Windows tools
+
+* [oletools](https://github.com/decalage2/oletools): python tools to analyze MS OLE2 files
+
 ## Linux tools
 
 * [debugfs](https://linux.die.net/man/8/debugfs): File system debugger
