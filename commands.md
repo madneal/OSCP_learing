@@ -101,36 +101,36 @@ SELECT name FROM master.sys.databases
 echo | openssl s_client -showcerts -servername 10.10.10.124 -connect 10.10.10.124:443 2>/dev/null | openssl x509 -inform pem -noout -text
 ```
 
-### snmpwalk
+## snmpwalk
 
-#### information scan
+### information scan
 
 ```
 snmpwalk -v 2c -c public 10.10.10.65
 ```
 
-#### enable MIB
+### enable MIB
 
 * apt install snmp-mibs-downloader
 * comment out mibs in `/etc/snmp/snmap.conf`
 
-### Cewl
+## Cewl
 
-#### Generate password list
+### Generate password list
 
 ```
 cewl -w cewl-forum.txt -e -a http://gorum.bart.htb
 ```
 
-### Hydra
+## Hydra
 
-#### Brute force login form http
+### Brute force login form http
 
 ```
  hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.43 http-post-form "/department/login.php:username=^USER^&password=^PASS^:Invalid Password!" -Vv -f
  ```
  
- #### Brute force login form https
+ ### Brute force login form https
  
  ```
  hydra 10.10.10.43 -l whatever -P /opt/SecLists/Passwords/darkweb2017-top10000.txt https-post-form "/db/:password=^PASS^&remember=yes&login=log+in&proc_login=true:Incorrect password." -Vv -s 443
